@@ -21,7 +21,7 @@ const NewClient =() => {
         try {
             const body = [description, description1, description2, description3, description4, description5, description6, acc];
             // eslint-disable-next-line
-            const response = await fetch("http://localhost:5000/users", {
+            const response = await fetch("/users", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(body)

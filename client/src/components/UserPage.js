@@ -8,7 +8,7 @@ const UserPage = () => {
 
     const getUsers = async () => {
         try {
-            const response = await fetch("http://localhost:5000/users");
+            const response = await fetch("/users");
             const jsonData = await response.json();
             setUsers(jsonData);
         } catch (err) {
