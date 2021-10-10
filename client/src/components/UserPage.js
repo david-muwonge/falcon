@@ -5,17 +5,14 @@ import { Link } from "react-router-dom";
 const UserPage = () => {
 
     const [users, setUsers] = useState([]);
+   
 
-    const getUsers = async () => {
-        try {
-            const response = await fetch("/users");
-            const jsonData = await response.json();
-            setUsers(jsonData);
-        } catch (err) {
-            console.error(err.message);
-        }
-        
-    };
+    
+    async function getUsers() {
+        const response = await fetch("/users");
+        const jsonData = await response.json();
+        setUsers(jsonData);        
+    }
 
     useEffect(() => {
         getUsers();

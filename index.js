@@ -32,11 +32,13 @@ app.post("/send", async(req, res) => {
             "UPDATE accounts SET token = $2, units = $3, gasalert = $4, tamper = $5, battery = $6, latitude = $7, longitude = $8 WHERE serial = $1 RETURNING *",
             [ ID,  token, units, gasalert, tamper, battery, latitude, longitude ]           
         );
-        const respose = await pool.query("SELECT account_num FROM accounts WHERE serial = $1",
+        {/*const respose = await pool.query("SELECT account_num FROM accounts WHERE serial = $1",
         [ID]
         );
+        res.json(respose.rows[0]); */}
         
-        res.json(respose.rows[0]);
+        
+        res.json("done");
     } catch (err) {
        console.error(err.message); 
     }
@@ -56,14 +58,14 @@ app.post("/users", async(req, res) => {
         
         console.log(req.body);
 
-        const newTodo = await pool.query(
+        const newUser = await pool.query(
             "INSERT INTO accounts (firstname, lastname, mobile, location_detail, district, serial, nin, account_num) VALUES($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *",
             [description, description1, description2, description3, description4, description5, description6, description7]
 
            
         );
         
-        res.json(newTodo.rows[0]);
+        res.json("added");
     } catch (err) {
        console.error(err.message); 
     }
