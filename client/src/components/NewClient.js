@@ -28,7 +28,7 @@ const NewClient =() => {
                 
             });
             
-            window.location = "/users";
+            window.location = "/";
             
         } catch (err) {
             console.error(err.message);
