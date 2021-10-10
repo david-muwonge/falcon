@@ -144,7 +144,7 @@ const ClientView = () => {
         </div>
     </div>
 </div>
-</div>  <button className="btn btn-warning text-success" onClick={() => (window.location ="/users") }>back</button>                                      
+</div>  <button className="btn btn-warning text-success" onClick={() => (window.location ="/viewUsers") }>back</button>                                      
         </Fragment>
     );
 }

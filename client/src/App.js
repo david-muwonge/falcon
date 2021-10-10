@@ -19,7 +19,7 @@ function App() {
         <Fragment>
             <div className="">
                <Route exact path="/" component={Welcome} />
-               <Route exact path="/users" component={UserPage} />
+               <Route exact path="/viewUsers" component={UserPage} />
                <Route exact path="/newclient" component={NewClient} />
                <Route exact path="/view/:id" component={ClientView} />
             </div>            

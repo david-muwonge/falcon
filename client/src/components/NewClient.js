@@ -28,7 +28,7 @@ const NewClient =() => {
                 
             });
             
-            window.location = "/users";
+            window.location = "/viewUsers";
             
         } catch (err) {
             console.error(err.message);
@@ -157,7 +157,7 @@ const NewClient =() => {
                 </div>
                 <button class="btn btn-warning text-success font-weight-bold mb-2" type="submit">Submit form</button>
                 <ul Style = "list-style-type:none"> 
-                <li><Link to="/users">
+                <li><Link to="/viewUsers">
                     <button class="btn btn-warning text-success ml-2 font-weight-bold">Cancel</button></Link>
                   </li>
                 </ul>

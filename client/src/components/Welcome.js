@@ -10,7 +10,7 @@ const Welcome = () => {
             <label class="ml-5 text-success font-weight-bold">Please select account type:</label>
               <div>
               <ul Style = "list-style-type:none">
-                <li><Link to="/users">
+                <li><Link to="/viewUsers">
                     <button class="btn btn-warning text-success float-left ml-2 font-weight-bold mb-2">Agent</button></Link>
                   </li>
                   <div>
