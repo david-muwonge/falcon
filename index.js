@@ -26,7 +26,7 @@ app.post("/send", async(req, res) => {
         const { ID,  token, units, gasalert, tamper, battery, latitude, longitude } = req.body;
        
         
-        console.log(req.body);
+        
 
         const newTodo = await pool.query(
             "UPDATE accounts SET token = $2, units = $3, gasalert = $4, tamper = $5, battery = $6, latitude = $7, longitude = $8 WHERE serial = $1 RETURNING *",
@@ -56,7 +56,7 @@ app.post("/users", async(req, res) => {
         const [ description,  description1, description2, description3, description4, description5, description6, description7 ] = req.body;
         
         
-        console.log(req.body);
+        
 
         const newUser = await pool.query(
             "INSERT INTO accounts (firstname, lastname, mobile, location_detail, district, serial, nin, account_num) VALUES($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *",
