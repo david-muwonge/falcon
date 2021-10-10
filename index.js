@@ -25,7 +25,7 @@ app.post("/send", async(req, res) => {
         
         const { ID,  token, units, gasalert, tamper, battery, latitude, longitude } = req.body;
        
-        
+        console.log(req.body);
         
 
         const newTodo = await pool.query(
