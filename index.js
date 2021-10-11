@@ -29,6 +29,7 @@ app.post("/send", async(req, res) => {
         
 
         const newTodo = await pool.query(
+            
             "UPDATE accounts SET token = $2, units = $3, gasalert = $4, tamper = $5, battery = $6, latitude = $7, longitude = $8 WHERE serial = $1 RETURNING *",
             [ ID,  token, units, gasalert, tamper, battery, latitude, longitude ]           
         );
@@ -37,7 +38,7 @@ app.post("/send", async(req, res) => {
         );
         res.json(respose.rows[0]); */}
         
-        
+        console.log(req.body);
         res.json("done");
     } catch (err) {
        console.error(err.message); 
