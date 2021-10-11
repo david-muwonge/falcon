@@ -55,7 +55,7 @@ app.post("/users", async(req, res) => {
     try {
         
         const [ description,  description1, description2, description3, description4, description5, description6, description7 ] = req.body;
-        
+        console.log(req.body);
         
         
 
@@ -65,6 +65,7 @@ app.post("/users", async(req, res) => {
 
            
         );
+        console.log(req.body);
         
         res.json("added");
     } catch (err) {
