@@ -23,6 +23,7 @@ if (process.env.NODE_ENV === "production"){
 app.post("/send", async(req, res) => {
     try {
         console.log("hello");
+        console.log(req.body);
         const { ID,  token, units, gasalert, tamper, battery, latitude, longitude } = req.body;
        
        
@@ -38,7 +39,7 @@ app.post("/send", async(req, res) => {
         );
         res.json(respose.rows[0]); */}
         
-        console.log(req.body);
+        
         res.json("done");
     } catch (err) {
        console.error(err.message); 
