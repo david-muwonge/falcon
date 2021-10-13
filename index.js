@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === "production"){
 
 app.post("/send", async(req, res) => {
     try {
-        console.log("hello");
+        
         console.log(req.body);
         const { ID,  token, units, gasalert, tamper, battery, latitude, longitude } = req.body;
        
