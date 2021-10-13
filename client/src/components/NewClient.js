@@ -23,7 +23,7 @@ const NewClient =() => {
             // eslint-disable-next-line
             
             
-            const response = await fetch("/users", {
+             await fetch("/users", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(body)
