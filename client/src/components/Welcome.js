@@ -11,7 +11,7 @@ const Welcome = () => {
               <div>
               <ul Style = "list-style-type:none">
                 <li><Link to="/viewUsers">
-                    <button className="btn btn-warning col-md-3 mr-2 text-success float-left font-weight-bold mb-2">Agent</button></Link>
+                    <button className="btn btn-warning col-md-3 mr-10 text-success float-left font-weight-bold mb-2">Agent</button></Link>
                   </li>
                   <div>
                   <li><Link to="/">
