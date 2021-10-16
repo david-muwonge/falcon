@@ -15,7 +15,7 @@ const Welcome = () => {
                   </li>
                   <div>
                   <li><Link to="/">
-                    <button class="container btn btn-warning text-success font-weight-bold mb-2">Customer</button></Link>
+                    <button class="container mr-4 btn btn-warning text-success font-weight-bold mb-2">Customer</button></Link>
                   </li>                    
                   </div>
                 </ul>               
