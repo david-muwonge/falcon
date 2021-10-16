@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Welcome = () => {
     return (<Fragment>
-      <div className="">
+      <div className="container d-flex">
         <h1 className="text-center text-warning  font-weight-bold">FALCON GAS</h1>
         <div>
           <div>
