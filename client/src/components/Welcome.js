@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const Welcome = () => {
     return (<Fragment>
       <div className="">
-        <h1 className="container text-center text-warning text-transform-uppercase font-weight-bold">FALCON GAS</h1>
+        <h1 className="container text-center text-warning  font-weight-bold">FALCON GAS</h1>
         <div>
           <div>
-            <label className="container text center text-success font-weight-bold">Please select account type:</label>
+            <label className="container text-center text-success font-weight-bold">Please select account type:</label>
               <div>
               <ul Style = "list-style-type:none">
                 <li><Link to="/viewUsers">
@@ -15,7 +15,7 @@ const Welcome = () => {
                   </li>
                   <div>
                   <li><Link to="/">
-                    <button class="container btn btn-warning text-success ml-2 font-weight-bold mb-2">Customer</button></Link>
+                    <button class="container btn btn-warning text-success font-weight-bold mb-2">Customer</button></Link>
                   </li>                    
                   </div>
                 </ul>               
