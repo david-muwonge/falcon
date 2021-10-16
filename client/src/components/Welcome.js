@@ -11,11 +11,11 @@ const Welcome = () => {
               <div>
               <ul Style = "list-style-type:none">
                 <li><Link to="/viewUsers">
-                    <button className="container btn btn-warning text-success float-left font-weight-bold mb-2">Agent</button></Link>
+                    <button className="btn btn-warning text-success float-left font-weight-bold mb-2">Agent</button></Link>
                   </li>
                   <div>
                   <li><Link to="/">
-                    <button class="container mr-4 btn btn-warning text-success font-weight-bold mb-2">Customer</button></Link>
+                    <button class="btn btn-warning text-success font-weight-bold mb-2">Customer</button></Link>
                   </li>                    
                   </div>
                 </ul>               
